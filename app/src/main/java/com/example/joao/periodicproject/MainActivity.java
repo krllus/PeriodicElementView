@@ -14,13 +14,25 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final WrapperPeriodicElement element = findViewById(R.id.element_1);
-        element.setTextTop("15");
+        final WrapperPeriodicElement cooper = findViewById(R.id.element_cooper);
+        cooper.setTextTop("29");
 
-        element.setOnClickListener(new View.OnClickListener() {
+        cooper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, element.getTextBottom(), Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, cooper.getTextBottom(), Toast.LENGTH_LONG).show();
+            }
+        });
+
+        final WrapperPeriodicElement sodium = findViewById(R.id.element_sodium);
+        sodium.setTextTop("11");
+        sodium.setTextMiddle("Na");
+        sodium.setTextBottom("Sodium");
+
+        sodium.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, sodium.getTextBottom(), Toast.LENGTH_LONG).show();
             }
         });
 

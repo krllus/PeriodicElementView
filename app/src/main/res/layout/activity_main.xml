@@ -1,44 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     android:background="@android:color/white"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <com.example.joao.periodicproject.customview.WrapperPeriodicElement
-        android:id="@+id/element_1"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="2dp"
-        app:textBottom="Hydrogen"
-        app:textMiddle="H"
-        app:textTop="1" />
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Are you made of Cooper and Tellurium?\nBecause you're"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.example.joao.periodicproject.customview.WrapperPeriodicElement
+        android:id="@+id/element_cooper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="2dp"
-        app:textBottom="Magnesium"
-        app:textMiddle="Mg"
-        app:textTop="12" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:textBottom="Cooper"
+        app:textMiddle="Cu" />
 
     <com.example.joao.periodicproject.customview.WrapperPeriodicElement
+        android:id="@+id/element_telurium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="2dp"
-        app:textBottom="Potassium"
-        app:textMiddle="K"
-        app:textTop="19" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/element_cooper"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:textBottom="Tellurium"
+        app:textMiddle="Te"
+        app:textTop="52" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="I was going to make a joke about sodium, but..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/element_cooper" />
 
     <com.example.joao.periodicproject.customview.WrapperPeriodicElement
+        android:id="@+id/element_sodium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="2dp"
-        app:textBottom="Bohrium"
-        app:textMiddle="Bh"
-        app:textTop="107" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
