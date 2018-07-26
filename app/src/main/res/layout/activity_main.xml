@@ -15,30 +15,30 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Are you made of Cooper and Tellurium?\nBecause you're"
+        android:text="Are you made of copper and tellurium?\nBecause you're"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.example.joao.periodicproject.customview.WrapperPeriodicElement
-        android:id="@+id/element_cooper"
+        android:id="@+id/element_copper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:textBottom="Cooper"
+        app:textBottom="Copper"
         app:textMiddle="Cu" />
 
     <com.example.joao.periodicproject.customview.WrapperPeriodicElement
-        android:id="@+id/element_telurium"
+        android:id="@+id/element_tellurium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintStart_toEndOf="@+id/element_cooper"
+        app:layout_constraintStart_toEndOf="@+id/element_copper"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:textBottom="Tellurium"
         app:textMiddle="Te"
@@ -55,7 +55,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/element_cooper" />
+        app:layout_constraintTop_toBottomOf="@+id/element_copper" />
 
     <com.example.joao.periodicproject.customview.WrapperPeriodicElement
         android:id="@+id/element_sodium"

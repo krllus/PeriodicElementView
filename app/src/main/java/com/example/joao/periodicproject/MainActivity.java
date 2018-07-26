@@ -14,13 +14,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final WrapperPeriodicElement cooper = findViewById(R.id.element_cooper);
-        cooper.setTextTop("29");
+        final WrapperPeriodicElement copper = findViewById(R.id.element_copper);
+        copper.setTextTop("29");
 
-        cooper.setOnClickListener(new View.OnClickListener() {
+        copper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, cooper.getTextBottom(), Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, copper.getTextBottom(), Toast.LENGTH_LONG).show();
             }
         });
 
