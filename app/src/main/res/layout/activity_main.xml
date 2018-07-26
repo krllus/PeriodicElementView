@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <com.example.joao.periodicproject.customview.WrapperPeriodicElement
+        android:id="@+id/element_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        app:textBottom="Hydrogen"
+        app:textMiddle="H"
+        app:textTop="1" />
+
+    <com.example.joao.periodicproject.customview.WrapperPeriodicElement
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        app:textBottom="Magnesium"
+        app:textMiddle="Mg"
+        app:textTop="12" />
+
+    <com.example.joao.periodicproject.customview.WrapperPeriodicElement
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        app:textBottom="Potassium"
+        app:textMiddle="K"
+        app:textTop="19" />
+
+    <com.example.joao.periodicproject.customview.WrapperPeriodicElement
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        app:textBottom="Bohrium"
+        app:textMiddle="Bh"
+        app:textTop="107" />
+
+</LinearLayout>

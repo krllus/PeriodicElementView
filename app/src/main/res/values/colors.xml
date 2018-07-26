@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="periodic_element_disabled">#005380</color>
+    <color name="periodic_element_enabled">#001825</color>
+    <color name="periodic_element_pressed">#00324d</color>
+
+</resources>
